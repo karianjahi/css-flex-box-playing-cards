@@ -9,7 +9,7 @@ html,body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    border: 2px solid midnightblue;
+    /* border: 2px solid midnightblue; */
     width: 40%;
     height: 35%;
     padding: .5%;
