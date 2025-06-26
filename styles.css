@@ -10,8 +10,8 @@ html,body {
     flex-wrap: wrap;
     gap: 20px;
     /* border: 2px solid midnightblue; */
-    width: 20%;
-    height: 40%;
+    width: 35%;
+    height: 35%;
     padding: .5%;
     justify-content: center;
 }
