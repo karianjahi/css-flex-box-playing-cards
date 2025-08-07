@@ -5,63 +5,260 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playing Cards</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
     <main id="playing-cards">
         <div class="card">
             <div class="left">
-                <div class="upright">A</div>
-                <div class="symbol">♠</div>
+                <div class="number">A</div>
+                <div class="flower">♠</div>
             </div>
-
             <div class="middle">
-                <div class="scaled">♠</div>                
+                <div class="flower">♠</div>
             </div>
-
             <div class="right">
-                <div class="symbol-flip">♠</div>      
-                <div class="letter-flip">A</div>      
+                <div class="flower reversed">♠</div>
+                <div class="number reversed">A</div>
             </div>
         </div>
 
         <div class="card">
             <div class="left">
-                <div class="upright">2</div>
-                <div class="symbol">♣</div>
+                <div class="number">2</div>
+                <div class="flower">♣</div>
             </div>
-
             <div class="middle">
-                <div class="scaled">♣</div>                
-                <div class="middle-symbol-flip">♣</div>                
+                <div class="flower">♣</div>
+                <div class="flower reversed">♣</div>
             </div>
-
             <div class="right">
-                <div class="symbol-flip">♣</div>      
-                <div class="letter-flip">2</div>      
+                <div class="flower reversed">♣</div>
+                <div class="number reversed">2</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="left">
+                <div class="number">2</div>
+                <div class="flower">♣</div>
+            </div>
+            <div class="middle">
+                <div class="flower">♣</div>
+                <div class="flower reversed">♣</div>
+            </div>
+            <div class="right">
+                <div class="flower reversed">♣</div>
+                <div class="number reversed">2</div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="left">
+                <div class="number red">3</div>
+                <div class="flower red">♦</div>
+            </div>
+            <div class="middle">
+                <div class="flower red">♦</div>
+                <div class="flower red">♦</div>
+                <div class="flower reversed red">♦</div>
+            </div>
+            <div class="right">
+                <div class="flower reversed red">♦</div>
+                <div class="number reversed red">3</div>
             </div>
         </div>
 
         <div class="card">
             <div class="left">
-                <div class="upright color-red">3</div>
-                <div class="symbol color-red">♥</div>
+                <div class="number red">4</div>
+                <div class="flower red">♥</div>
             </div>
-
             <div class="middle">
-                <div class="scaled color-red">♥</div>                
-                <div class="scaled color-red">♥</div>                
-                <div class="middle-symbol-flip color-red">♥</div>                
+                <div class="flower red">♥♥</div>
+                <div class="flower reversed red">♥♥</div>
             </div>
-
             <div class="right">
-                <div class="symbol-flip color-red">♥</div>      
-                <div class="letter-flip color-red">3</div>      
+                <div class="flower reversed red">♥</div>
+                <div class="number reversed red">4</div>
             </div>
         </div>
 
-        
+        <div class="card">
+            <div class="left">
+                <div class="number">5</div>
+                <div class="flower">♣</div>
+            </div>
+            <div class="middle">
+                <div class="flower">♣♣</div>
+                <div class="flower reversed">♣</div>
+                <div class="flower reversed">♣♣</div>
+            </div>
+            <div class="right">
+                <div class="flower reversed">♣</div>
+                <div class="number reversed">5</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <div class="number">6</div>
+                <div class="flower">♣</div>
+            </div>
+            <div class="middle">
+                <div class="flower">♣♣</div>
+                <div class="flower">♣♣</div>
+                <div class="flower reversed">♣♣</div>
+            </div>
+            <div class="right">
+                <div class="flower reversed">♣</div>
+                <div class="number reversed">6</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <div class="number">7</div>
+                <div class="flower">♠</div>
+            </div>
+            <div class="middle">
+                <div class="flower">♠♠♠</div>
+                <div class="flower">♠</div>
+                <div class="flower reversed">♠♠♠</div>
+            </div>
+            <div class="right">
+                <div class="flower reversed">♠</div>
+                <div class="number reversed">7</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <div class="number red">8</div>
+                <div class="flower red">♥</div>
+            </div>
+            <div class="middle">
+                <div class="flower red">♥♥</div>
+                <div class="flower red">♥</div>
+                <div class="flower red">♥♥</div>
+                <div class="flower red">♥</div>
+                <div class="flower red reversed">♥♥</div>
+            </div>
+            <div class="right">
+                <div class="flower red reversed">♥</div>
+                <div class="number red reversed">8</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <div class="number red">9</div>
+                <div class="flower red">♦</div>
+            </div>
+            <div class="middle">
+                <div class="flower red">♦♦♦</div>
+                <div class="flower red">♦♦♦</div>
+                <div class="flower red">♦♦♦</div>
+            </div>
+            <div class="right">
+                <div class="flower red reversed">♦</div>
+                <div class="number red reversed">9</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <div class="number">10</div>
+                <div class="flower">♣</div>
+            </div>
+            <div class="middle">
+                <div class="flower">♣♣♣</div>
+                <div class="flower">♣♣</div>
+                <div class="flower reversed">♣♣</div>
+                <div class="flower reversed">♣♣♣</div>
+            </div>
+            <div class="right">
+                <div class="flower reversed">♣</div>
+                <div class="number reversed">10</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <div class="number">J</div>
+                <div class="flower">♠</div>
+            </div>
+            <div class="middle jack">
+
+            </div>
+            <div class="right">
+                <div class="flower reversed">♠</div>
+                <div class="number reversed">J</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <div class="number red">K</div>
+                <div class="flower red">♦</div>
+            </div>
+            <div class="middle kei">
+
+            </div>
+            <div class="right">
+                <div class="flower reversed red">♦</div>
+                <div class="number reversed red">K</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <div class="number">Q</div>
+                <div class="flower">♠</div>
+            </div>
+            <div class="middle kiu">
+
+            </div>
+            <div class="right">
+                <div class="flower reversed">♠</div>
+                <div class="number reversed">Q</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <div class="number">7</div>
+                <div class="flower">♣</div>
+            </div>
+            <div class="middle">
+                <div class="flower">♣♣♣</div>
+                <div class="flower">♣</div>
+                <div class="flower reversed">♣♣♣</div>
+            </div>
+            <div class="right">
+                <div class="flower reversed">♣</div>
+                <div class="number reversed">7</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <div class="number red">5</div>
+                <div class="flower red">♥</div>
+            </div>
+            <div class="middle">
+                <div class="flower red">♥♥</div>
+                <div class="flower red reversed">♥</div>
+                <div class="flower red reversed">♥♥</div>
+            </div>
+            <div class="right">
+                <div class="flower red reversed">♥</div>
+                <div class="number red reversed">5</div>
+            </div>
+        </div>
+
+
     </main>
 </body>
 

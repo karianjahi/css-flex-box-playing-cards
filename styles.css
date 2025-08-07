@@ -1,91 +1,151 @@
-html,body {
-    background-color: rgb(25, 0, 0);
-    color: black;
+/* * {
+    border: 2px solid #808080;
+} */
+
+:root {
+    --corner-flower-scale: 1.8;
+    --number-scale: 1.8;
+    --middle-flower-scale: 4.0;
+}
+
+body {
     width: 100%;
     height: 100%;
+    font-family: monaco;
 }
+
 
 #playing-cards {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    height: 1100px;
+    width: 800px;
     gap: 20px;
-    border: 2px solid midnightblue;
-    width: 100%;
-    height: 100%;
-    padding: .5%;
-    justify-content: center;
+    background-color: antiquewhite;
+    /* border: 2px solid salmon; */
 }
 
 .card {
     display: flex;
-    flex-direction: column;
+    width: 180px;
+    height: 250px;
     justify-content: space-between;
-    width: 30%;
-    height: 95%;
-    /* border: 1px solid salmon; */
+    border: 2px solid #484646;
+    border-radius: 5px;
+    box-shadow: 4px 4px 3px grey;
     background-color: white;
-    border-radius: 10px;
-    padding: .5%;
 }
 
-.left, .middle, .right {
-    /* border: 1px solid skyblue; */
-    display: flex;
-    height: 15%;
-    width: 15%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-
-}
 .left {
-    align-self: flex-start;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 1px solid grey; */
+    width: 10px;
+    height: 60px;
+    justify-content: flex-start;
+}
+
+.left .number {
+    transform: scale(var(--number-scale));
+}
+
+.left .flower {
+    transform: scale(var(--corner-flower-scale));
 }
 
 .middle {
-    align-self: center;
-    gap: 30px;
-    flex-direction: column;
- }
+    position: relative;
+    top: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 1px solid grey; */
+    align-items: center;
+    gap: 10px;
+    width: 20px;
+    height: 230px;
+    justify-content: space-around;
+}
+
+.middle .flower {
+    transform: scale(var(--middle-flower-scale));
+}
+
+.number.reversed {
+    transform: rotate(180deg) scale(var(--number-scale));
+}
+
+
+
+.middle .flower.reversed {
+    transform: rotate(180deg) scale(var(--middle-flower-scale));
+    
+}
+
 
 .right {
-    align-self: flex-end;
+    position: relative;
+    top: 180px;
+    right: 15px;
+    /* border: 1px solid grey; */
+    width: 10px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.scaled {
-    transform: scale(3);
+.right .flower.reversed {
+    transform: rotate(180deg) scale(var(--corner-flower-scale));
 }
 
-.symbol { 
-    transform: scale(1.5);
-}
-
-.upright {
-    transform: scale(1.8);
-}
-
-.letter-flip {
-    transform: scale(-1.8);
-}
-
-.symbol-flip {
-    transform: scale(-1.5);
-}
-
-.middle-symbol-flip {
-    transform: scale(-3);
-}
-
-.color-red {
+.red {
     color: red;
 }
 
-.four-items {
-    display: flex;
-    border: 1px solid blueviolet;
-    
-    align-self: center;
-    gap: 16px;
+.jack {
+    position: relative;
+    top: 15px;
+    width: 130px;
+    height: 220px;
+    background: repeating-radial-gradient(circle at center,
+                                          orange 0,
+                                          orange 20%,
+                                          rgb(169, 165, 165) 20%,
+                                          white 40%,
+                                          azure 40%,
+                                          azure 60%);
+}
+.kei {
+    position: relative;
+    top: 15px;
+    width: 130px;
+    height: 220px;
+    background: repeating-radial-gradient(circle at center,
+                                          rgb(172, 39, 165) 0,
+                                          orange 20%,
+                                          rgb(169, 165, 165) 20%,
+                                          rgb(147, 133, 44) 40%,
+                                          azure 40%,
+                                          rgb(85, 95, 95) 60%);
 }
 
+.kiu {
+    position: relative;
+    top: 15px;
+    width: 130px;
+    height: 220px;
+    background: repeating-linear-gradient(to right,
+                                          rgb(39, 77, 172) 0,
+                                          rgb(0, 255, 255) 10%,
+                                          rgb(137, 18, 18) 10%,
+                                          rgb(192, 186, 186) 20%,
+                                          azure 40%,
+                                          rgb(10, 167, 167) 60%,
+                                          #121111 100%);
+}
